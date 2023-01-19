@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: MullerBold;
+  font-display: swap;
+  src: url("/fonts/MullerBold.woff") format("woff"),
+    url("/fonts/MullerBold.woff2") format("woff2");
+  font-style: normal;
+}
+@font-face {
+  font-family: MullerRegular;
+  font-display: swap;
+  src: url("/fonts/MullerRegular.woff") format("woff"),
+    url("/fonts/MullerRegular.woff2") format("woff2");
+  font-style: normal;
+}
+/* .big-container { */
+  /* max-width: 1150px; */
+  /* width: 100%; */
+  /* height: auto; */
+  /* margin: 0 auto; */
+/* } */
+
+.first-screen {
+  background-image: url("Images/background.jpg");
+  /* width: 1475px; */
+  height: 800px;
+  /* max-width: 1150px; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+.link {
+  display: grid;
+  font-size: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+div.link a {
+  font-family: MullerRegular;
+  color: black;
+  text-decoration: none;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.phone {
+  font-family: MullerRegular;
+}
+div.phone a {
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+}
+#Tesla {
+  display: flex;
+  font-size: 25.4px;
+}
+img {
+  flex-basis: 20%;
+}
+span {
+  font-family: "russo one";
+  color: #46b1de;
+  flex-basis: 80%;
+  padding-left: 12px;
+}
+.head {
+  margin-left: 145px;
+  margin-top: 150px;
+}
+.head h1 {
+  font-family: "russo one";
+  font-size: 35px;
+}
+.head h2 {
+  font-family: "russo one";
+  color: #46b1de;
+  font-size: 36px;
+}
+.head h3 {
+  font-family: "russo one";
+  font-weight: 400;
+}
+.button {
+  margin-top: 60px;
+}
+.button1 {
+  font-family: MullerRegular;
+  margin-left: 160px;
+  background-color: #46b1de;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 11px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.button2 {
+  font-family: MullerRegular;
+  margin-left: 85px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 20px;
+  color: #46b1de;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 11px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.container {
+  display: flex;
+  margin-top: 290px;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  gap: 31px;
+}
+.card {
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  border: 1px solid;
+  width: 280px;
+  background-color: white;
+  z-index: 1;
+}
+.number {
+  font-family: MullerBold;
+  font-size: 65px;
+  padding-top: 9px;
+  padding-left: 10px;
+  flex-basis: auto;
+}
+.text {
+  font-family: MullerRegular;
+  color: black;
+}
+.lady {
+  position: absolute;
+  left: 777px;
+  bottom: 1px;
+  top: 165px;
+}
+.low_head {
+  font-family: "russo one";
+  margin-top: 100px;
+  text-align: center;
+}
+.low_head h2 {
+  font-size: 31px;
+  padding-bottom: 10px;
+}
+.low_head p {
+  font-size: 18px;
+}
+.flex-box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 15px;
+  column-gap: 40px;
+  grid-auto-flow: column;
+  margin: 50px 118px 50px 118px;
+  padding: 15px;
+  background: #46b1de;
+  border-radius: 15px;
+}
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6 {
+  background: white;
+  border-radius: 15px;
+  padding: 5px 25px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  color: #46b1de;
+}
+.box-number {
+  font-family: MullerBold;
+  margin-right: 18px;
+  font-weight: normal;
+  font-size: 45px;
+}
+.text-blue {
+  font-family: MullerBold;
+  font-size: 18px;
+  width: 72%;
+}
+.text-black {
+  font-family: MullerRegular;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+  .flex-box {
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+  }
+}
+.lower-footer {
+  background: linear-gradient(to left, #0781aa, #a1c7d4);
+  padding-left: 30px;
+  padding-top: 50px;
+  display: flex;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.logo-tooth {
+  display: flex;
+}
+.DR {
+  display: flex;
+  font-size: 31px;
+  margin-top: 10px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+.den {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 27px;
+  color: black;
+}
+
+.lower-link {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  flex-basis: 50%;
+}
+.link-text {
+  display: flex;
+  align-items: end;
+}
+.link-1,
+.link-2,
+.link-3,
+.link-4 {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+.link-3 {
+  font-weight: 600;
+}
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-left: 90px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.working {
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.contacts-wrapper {
+  display: flex;
+  margin-left: 450px;
+  color: white;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 20px;
+  color: white;
+}
+.con {
+  font-size: 30px;
+}
+.phonepng {
+  display: flex;
+  gap: 10px;
+}
+.phone-png-1 {
+  color: white;
+  text-decoration: none;
+}
+.vtw {
+  display: flex;
+  gap: 19px;
+}
+.insta {
+  display: flex;
+  gap: 19px;
+}
+.NikTes {
+  text-decoration: none;
+  color: white;
+}
+.mail {
+  display: flex;
+  gap: 19px;
+}
+.mail-1 {
+  text-decoration: none;
+  color: white;
+}
+.copyright {
+  display: flex;
+  justify-content: end;
+}
+.copyright1 {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 17px;
+  margin-left: 170px;
+}
